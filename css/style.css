@@ -1,5 +1,4 @@
 /* Projeto em construção */
-
 * {
     margin: 0;
     padding: 0;
@@ -10,9 +9,13 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
-body {background-color: #FDFDFD;}
-
+body {
+    background: url(../img/banner-principal.png) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 a {text-decoration: none;}
 
 ul {list-style: none;}
@@ -22,26 +25,21 @@ img {max-width: 100%;}
 /* CABEÇALHO */
 .cabecalho {
     width: 100%;
-    float: left;
     padding: 3% 4%;
 }
-.logo {
-    width: 56px;
-    height: 56px;
-    float: right;
-    background: url(../img/logo.png) center center/56px no-repeat;
-    font-size: 0;
-}
 .button-menu {
-    width: 56px;
+    width: 100%;
     height: 56px;
-    float: left;
+    padding: 3% 4%;
+    float: right;
     text-align: center;
-    background: url(../img/bars2.png) center center/35px no-repeat;
+    background: url(../img/bars.png) center center/35px no-repeat;
     cursor: pointer;
 }
+
 /* MENU */
 .menu {
+    display: none; /* deixa o menu invisível */
     width: 100%;
     height: 100%;
     position: fixed;
@@ -51,6 +49,7 @@ img {max-width: 100%;}
 }
 .button-close {
     font-size: 2em;
+    font-weight: 300;
     color: #FDFDFD;
     float: right;
     margin-right: 5%;
@@ -67,9 +66,59 @@ img {max-width: 100%;}
 }
 .menu li a {
     font-size: 1.5em;
+    font-weight: 400;
     color: #FDFDFD;
     padding: 2% 3%;
 }
 .menu li a:hover {
     border: 1px solid #CEEEB4;
+}
+
+/* BANNER */
+.banner-principal {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 3% 4%;
+    /*border-top: solid 1px #fff;*/
+    border-bottom: solid 1px #fff;
+}
+.title-banner {
+    width: 100%;
+    padding: 30px;
+}
+.title-banner h2 {
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: 700;
+}
+.title-banner h3 {
+    font-size: 1.5em;
+    color: #fff;
+}
+.buttons-culto-programacao {
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 30px;
+}
+.cultos {
+    width: 80%;
+    padding: 4% 7%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 2px #fff;
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.programacao {
+    width: 80%;
+    padding: 4% 7%;
+    margin-top: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 2px #fff;
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
 }

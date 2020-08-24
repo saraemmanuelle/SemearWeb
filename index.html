@@ -14,12 +14,11 @@
     </head>
     <body>
         <header class="cabecalho">
-            <a href="index.html"><h1 class="logo">Igreja Batista Semear</h1></a>
             <button class="button-menu"></button>
             <nav class="menu">
                 <a class="button-close">x</a>
                 <ul>
-                    <li><a href="#">Início</a></li>
+                    <li><a href="index.html">Início</a></li>
                     <li><a href="#">Quem Somos</a></li>
                     <li><a href="#">Ministérios</a></li>
                     <li><a href="#">Contato</a></li>
@@ -27,6 +26,31 @@
                 </ul>
             </nav>
         </header>
+        <!-- Banner PRINCIPAL -->
+        <div class="banner-principal">
+            <div class="title-banner">
+                <h2>IGREJA BATISTA SEMEAR</h2>
+                <h3>Uma igreja de discipulos</h3>
+            </div>
+            <div class="buttons-culto-programacao">
+                <button class="cultos">CULTOS</button>
+                <button class="programacao">PROGRAMAÇÃO ANUAL</button>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <!-- Para ABRIR o Menu quando houver click -->
+        <script>
+            $(".button-menu").click(function(){
+                $(".menu").show();
+            })
+        </script>
+        <!-- Para FECHAR o Menu quando houver click -->
+        <script>
+            $(".button-close").click(function(){
+                $(".menu").hide();
+            })
+        </script>
+
     </body>
 <!-- Projeto em construção -->
 </html>
